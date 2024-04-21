@@ -5,7 +5,7 @@ A <%= api %> API built with `create-daraja-app` platform for <%= framework %>. T
 ## Setup
 
 - Run `npm install` on the root of this project to install dependencies.
-- Run `npm start` to start the project
+- Run `npm run dev` to start the project
 
 ## API
 
