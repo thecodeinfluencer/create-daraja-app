@@ -17,6 +17,7 @@
         "mpesa-express",
         "mpesa-sdk",
         "stk",
+        "stk-push",
         "api",
         "safaricom"
     ],
