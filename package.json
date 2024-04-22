@@ -4,6 +4,7 @@
     "description": "Bootstrap MPesa Daraja APIs across different frameworks with a single command.",
     "main": "index.js",
     "type": "module",
+    "repository": "https://github.com/thecodeinfluencer/create-daraja-app",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -11,7 +12,8 @@
         "daraja",
         "mpesa",
         "stk",
-        "safaricom"
+        "safaricom",
+        "api"
     ],
     "bin": "./index.js",
     "author": "thecodeinfluencer",
