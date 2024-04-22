@@ -1,6 +1,6 @@
 {
     "name": "create-daraja-app",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Bootstrap MPesa Daraja APIs across different frameworks with a single command.",
     "main": "index.js",
     "type": "module",
