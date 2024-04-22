@@ -10,10 +10,15 @@
     },
     "keywords": [
         "daraja",
+        "daraja-api",
         "mpesa",
+        "m-pesa",
+        "mpesa-api",
+        "mpesa-express",
+        "mpesa-sdk",
         "stk",
-        "safaricom",
-        "api"
+        "api",
+        "safaricom"
     ],
     "bin": "./index.js",
     "author": "thecodeinfluencer",
