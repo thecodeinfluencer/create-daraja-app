@@ -24,6 +24,9 @@
     "bin": "./index.js",
     "author": "thecodeinfluencer",
     "license": "ISC",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
     "dependencies": {
         "chalk": "^5.3.0",
         "commander": "^11.1.0",
