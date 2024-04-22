@@ -22,6 +22,16 @@ The command generates a project scaffold with an organized structure and include
     - Operating as a callback hook, this endpoint enables our application to receive and process callbacks from the Daraja platform.
     - By listening to incoming POST requests, our application can promptly respond to relevant events and update transaction statuses as necessary.
 
+## Supported Frameworks
+
+Below is a list of supported frameworks. Kindly [contribute](./CONTRIBUTING.md) to add to the list.
+
+-   [x] Node JS
+-   [x] Next JS
+-   [ ] Django
+-   [ ] Ruby on Rails
+-   [ ] Go
+
 ## Contributing
 
 This project is in early stage and actively welcomes contributions from the developer community to enhance its functionality and robustness. A dedicated [`CONTRIBUTING.md`](./CONTRIBUTING.md) file outlines guidelines and best practices for anyone interested in contributing to the `create-daraja-app` project. Whether it's suggesting improvements, reporting issues, or submitting code contributions, community involvement is highly encouraged to foster collaboration.
