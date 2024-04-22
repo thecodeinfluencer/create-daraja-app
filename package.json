@@ -6,7 +6,7 @@
     "type": "module",
     "repository": "https://github.com/thecodeinfluencer/create-daraja-app",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\""
     },
     "keywords": [
         "daraja",
