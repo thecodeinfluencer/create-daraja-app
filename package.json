@@ -1,6 +1,6 @@
 {
     "name": "create-daraja-app",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "description": "Set up a Daraja app by running this command.",
     "main": "index.js",
     "type": "module",
