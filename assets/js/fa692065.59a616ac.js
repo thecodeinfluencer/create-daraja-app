@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[5642],{766:a=>{a.exports=JSON.parse('{"label":"facebook","permalink":"/create-daraja-app/blog/tags/facebook","allTagsPath":"/create-daraja-app/blog/tags","count":1,"unlisted":false}')}}]);
