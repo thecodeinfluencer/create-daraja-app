@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[6842],{9836:a=>{a.exports=JSON.parse('{"label":"docusaurus","permalink":"/create-daraja-app/blog/tags/docusaurus","allTagsPath":"/create-daraja-app/blog/tags","count":4,"unlisted":false}')}}]);
