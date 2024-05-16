@@ -31,6 +31,7 @@ Below is a list of supported frameworks. Kindly [contribute](./CONTRIBUTING.md) 
 -   [ ] Django
 -   [ ] Ruby on Rails
 -   [ ] Go
+-   [x] Laravel
 
 ## Contributing
 
