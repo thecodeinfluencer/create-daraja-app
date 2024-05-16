@@ -29,7 +29,7 @@ Below is a list of supported frameworks. Kindly [contribute](./CONTRIBUTING.md) 
 -   [x] Node JS
 -   [x] Next JS
 -   [ ] Django
--   [ ] Ruby on Rails
+-   [x] Ruby on Rails
 -   [ ] Go
 
 ## Contributing
