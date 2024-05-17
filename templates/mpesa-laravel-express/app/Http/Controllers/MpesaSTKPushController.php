@@ -24,6 +24,7 @@ class MpesaSTKPushController extends Controller
         $phone_number = $request->input('phone');
         $amount = $request->input('amount');
 
+        /** @var \Illuminate\Http\Client\Response $response */
         $response = Mpesa::stkpush(
             phonenumber: $phone_number,
             amount: (int) $amount,
@@ -31,7 +32,9 @@ class MpesaSTKPushController extends Controller
             callbackurl: route('stk.callback')
         );
 
-        $result = json_decode((string)$response);
+        // associative array of the response body
+        $result = $response->json();
+
         return $result;
     }
 
