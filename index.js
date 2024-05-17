@@ -44,10 +44,12 @@ async function newCLI() {
             }).start()
 
             const templatePath = path.join(
-                __dirname,
+                process.cwd(),
                 'templates',
-                `mpesa-${frameworkPath}-${darajaApiPath}`
-            )
+                `mpesa-${frameworkPath.toLowerCase()}-${darajaApiPath.toLowerCase()}`
+            );   
+            
+                    
             const outputPath = path.join(process.cwd(), resolvedAppName)
 
             // Copy template files to the new app directory

@@ -1,9 +1,9 @@
 export const frameworks = [
     { label: 'Node.js', value: 'nodejs' },
     { label: 'Next.js', value: 'nextjs' },
+    { label: 'Laravel', value: 'laravel' },
     // { label: 'Python', value: 'python' },
     // { label: 'Java', value: 'java' },
-    // { label: 'PHP', value: 'php' },
     // { label: 'Ruby', value: 'ruby' },
     // { label: 'Go', value: 'go' },
 ]
