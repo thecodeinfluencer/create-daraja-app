@@ -1,4 +1,4 @@
-export default async function POST(request: Request) {
+export async function POST(request: Request) {
     const body = await request.json()
 
     console.info(`
@@ -12,5 +12,5 @@ export default async function POST(request: Request) {
     
     `)
 
-    Response.json({ success: true })
+    return Response.json({ success: true })
 }
