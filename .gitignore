@@ -2,3 +2,5 @@
 **/node_modules
 **test**
 templates/package-lock.json
+
+.idea/

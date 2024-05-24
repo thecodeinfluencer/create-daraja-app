@@ -6,6 +6,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .gateway import MpesaGateWay
+from .selectors import transactions_list
 from .serializers import TransactionSerializer, STKCheckoutSerializer
 
 
@@ -31,4 +32,15 @@ class MpesaCallBack(APIView):
         express = MpesaGateWay()
         response = express.callback_handler(json.loads(data))
         return Response(TransactionSerializer(response).data, status=status.HTTP_200_OK)
+
+
+class STKTransactionsListView(APIView):
+    permission_classes = ()
+
+    def get(self, request):
+        filters = request.query_params
+        response = transactions_list(filters=filters)
+        return Response(TransactionSerializer(response, many=True).data, status=status.HTTP_200_OK)
+
+
 

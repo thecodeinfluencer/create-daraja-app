@@ -125,8 +125,14 @@ MPESA_CONSUMER_SECRET = config("MPESA_CONSUMER_SECRET")
 MPESA_CONSUMER_KEY = config("MPESA_CONSUMER_KEY")
 MPESA_API_KEY = config("MPESA_API_KEY")
 MPESA_SHORT_CODE = config("MPESA_SHORT_CODE")
-MPESA_ACCESS_TOKEN_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
-MPESA_STK_PUSH_URL = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest'
+
+ENV = config("EVIRONMENT", "dev")
+if ENV == "production":
+    MPESA_ACCESS_TOKEN_URL = 'https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
+    MPESA_STK_PUSH_URL = 'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest'
+else:
+    MPESA_ACCESS_TOKEN_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
+    MPESA_STK_PUSH_URL = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest'
 MPESA_CALLBACK_URL = '/mpesa/call_back/'
 BASE_URL = config("BASE_URL", "http://127.0.0.1:8000")
 

@@ -17,5 +17,13 @@ class STKCheckoutSerializer(serializers.Serializer):
     def validate(self, attrs):
         phone_number = attrs.pop("phone_number")
         attrs["phone_number"] = str(phone_number)[1:]
+
+        reference = attrs.get("reference", )
+        description = attrs.get("description")
+        amount = attrs.get("amount")
+        if reference == "":
+            attrs["reference"] = "{}-{}".format(phone_number, amount)
+        if description == "":
+            attrs["description"] = "{}-{}".format(phone_number, amount)
         return attrs
 

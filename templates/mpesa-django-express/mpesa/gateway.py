@@ -7,6 +7,7 @@ from typing import Tuple
 from django.conf import settings
 
 from phonenumber_field.phonenumber import PhoneNumber
+from rest_framework.serializers import ValidationError
 from rest_framework.request import Request
 import requests
 from requests.auth import HTTPBasicAuth
@@ -42,11 +43,11 @@ class MpesaGateWay:
         try:
             basic_auth = HTTPBasicAuth(self.consumer_key, self.consumer_secret)
             response = requests.get(self.access_token_url, auth=basic_auth)
+            token = json.loads(response.text)['access_token']
         except Exception as e:
             logging.error("Error {}".format(e))
-        else:
-            token = json.loads(response.text)['access_token']
-            return token
+            raise ValidationError("Invalid credentials")
+        return token
 
     def generate_password(self) -> Tuple[str, str]:
         """
