@@ -3,6 +3,7 @@ class Api::ExampleController < ApplicationController
   before_action :load_variables
 
   include Example::Stk
+  include Example::Callback
 
   private
 
