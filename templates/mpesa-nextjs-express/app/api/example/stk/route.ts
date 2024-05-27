@@ -3,7 +3,7 @@ import getMpesaPassword from '@/utilities/getMpesaPassword'
 import variables from '@/utilities/variables'
 import axios from 'axios'
 
-export default async function POST(request: Request) {
+export async function POST(request: Request) {
     const { phone, amount } = await request.json()
     const { access_token } = await getMpesaCredentials()
 
@@ -31,7 +31,7 @@ export default async function POST(request: Request) {
         headers: { Authorization: `Bearer ${access_token}` },
     }
 
-    axios
+    return await axios
         .post(
             'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
             data,

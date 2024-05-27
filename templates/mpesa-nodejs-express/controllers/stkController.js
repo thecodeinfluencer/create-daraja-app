@@ -35,5 +35,8 @@ export const stk = async (req, res, next) => {
       config
     )
     .then((resp) => res.send(resp.data))
-    .catch((error) => res.status(400).send({ message: error?.message }));
+    .catch((error) => {
+      console.error('stkController', { message: error?.message });
+      res.status(400).send({ message: error?.message });
+    });
 };
