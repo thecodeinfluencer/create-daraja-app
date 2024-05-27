@@ -12,6 +12,7 @@ A <%= api %> API built with `create-daraja-app` platform for <%= framework %>. T
 The API exposes two endpoints:
 
 -   `/api/example/stk` - A `POST` endpoint that Handles the STK push and takes in `phone` and `amount` in the request body.
+- -   `/api/example/callback` - A `POST` endpoint that Handles the STK push and takes in `checkout_request_id` in the request body.
 
 ## Extending functionality
 

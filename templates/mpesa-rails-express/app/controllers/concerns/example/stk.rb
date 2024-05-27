@@ -7,6 +7,11 @@ module Example
       phone = params[:phone]
       amount = params[:amount]
 
+      unless phone && amount
+        render json: { error: 'Missing required values' }, status: :not_found
+        return
+      end
+
       payload = generate_stkpush_payload(phone, amount)
       headers = generate_headers
 
