@@ -1,6 +1,7 @@
 export const frameworks = [
     { label: 'Node.js', value: 'nodejs' },
     { label: 'Next.js', value: 'nextjs' },
+    { label: 'Rails', value: 'rails' },
     { label: 'Laravel', value: 'laravel' },
     // { label: 'Python', value: 'python' },
     // { label: 'Java', value: 'java' },
