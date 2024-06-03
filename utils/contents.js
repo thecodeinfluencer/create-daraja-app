@@ -3,7 +3,7 @@ export const frameworks = [
     { label: 'Next.js', value: 'nextjs' },
     { label: 'Rails', value: 'rails' },
     { label: 'Laravel', value: 'laravel' },
-    // { label: 'Python', value: 'python' },
+    { label: 'Python', value: 'python' },
     // { label: 'Java', value: 'java' },
     // { label: 'Ruby', value: 'ruby' },
     // { label: 'Go', value: 'go' },
