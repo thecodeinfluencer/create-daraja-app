@@ -1,6 +1,6 @@
 # <%= appname %>
 
-A <%= api %> API built with `create-daraja-app` platform for <%= framework %>. This project was bootstrapped with `create-daraja-api`
+A <%= api %> API built with `create-daraja-app` platform for <%= framework %>. This project was bootstrapped with `create-daraja-api`. This template uses Laravel 11.
 
 ## Setup
 
@@ -47,6 +47,15 @@ This template exposes two api endpoints:
 
 1. Run `ngrok http 8000` in a terminal in the project root
 2. Fill in the `.env` with the necessary information. Replace the `APP_URL` with the https version of the link provided on the ngrok terminal in step 1.
+
+```php
+MPESA_ENVIRONMENT=sandbox //or production
+MPESA_CONSUMER_KEY='<your consumer key>'
+MPESA_CONSUMER_SECRET='<your consumer secret>'
+MPESA_BUSINESS_SHORTCODE=174379
+SAFARICOM_PASSKEY='<your passkey>'
+```
+
 3. Start the project by running `php artisan serve`
 4. In Postman, create a `POST` request with the body containing the `phone` and `amount`
 5. Press send and you should receive a push on your phone
