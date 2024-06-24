@@ -38,3 +38,10 @@ Below is a list of supported frameworks. Kindly [contribute](./CONTRIBUTING.md) 
 This project is in early stage and actively welcomes contributions from the developer community to enhance its functionality and robustness. A dedicated [`CONTRIBUTING.md`](./CONTRIBUTING.md) file outlines guidelines and best practices for anyone interested in contributing to the `create-daraja-app` project. Whether it's suggesting improvements, reporting issues, or submitting code contributions, community involvement is highly encouraged to foster collaboration.
 
 Let's consolidate our efforts into one unified source (through a well-organized project, bootstrap, and readme) for generating MPesa Daraja APIs across various frameworks. This central resource encourages collaboration and contributions, eliminating the need for numerous scattered medium posts and guides.
+
+## Team
+
+* [@thecodeinfluencer](https://github.com/thecodeinfluencer)
+* [@Iankumu](https://github.com/Iankumu)
+* [@Annastacia-dev](https://github.com/Annastacia-dev)
+* [@kangangi](https://github.com/kangangi)
