@@ -41,7 +41,7 @@ Let's consolidate our efforts into one unified source (through a well-organized 
 
 ## Team
 
-* @thecodeinfluencer 
-* @Iankumu 
-* @Annastacia-dev 
-* @kangangi
+* [@thecodeinfluencer](https://github.com/thecodeinfluencer)
+* [@Iankumu](https://github.com/Iankumu)
+* [@Annastacia-dev](https://github.com/Annastacia-dev)
+* [@kangangi](https://github.com/kangangi)
