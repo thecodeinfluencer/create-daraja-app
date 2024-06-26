@@ -48,4 +48,33 @@ The API exposes two endpoints:
 1. Run `npx ngrok http 5000` in a terminal in the project root
 2. Replace the `CALLBACK_URL` in the `.env` with the https version of the link provided on the ngrok terminal inthe previous step.
 3. Next.js will reload to pick up the new `CALLBACK_URL` in the `.env`.
-4. Resend the request and once you action on the prompt, you should see on the running terminal, a console log with the callback info.
+4. Resend the request and once you action on the prompt, you should see on the running terminal, a console log with the callback info like below. Kindly note that for the sandbox apps, the callback from Daraja is usually intermitent and may not work. For live apps, it performs better.
+
+```json
+{
+    "MerchantRequestID": "29115-34620561-1",
+    "CheckoutRequestID": "ws_CO_191220191020363925",
+    "ResultCode": 0,
+    "ResultDesc": "The service request is processed successfully.",
+    "CallbackMetadata": {
+        "Item": [
+            {
+                "Name": "Amount",
+                "Value": 1.0
+            },
+            {
+                "Name": "MpesaReceiptNumber",
+                "Value": "NLJ7RT61SV"
+            },
+            {
+                "Name": "TransactionDate",
+                "Value": 20191219102115
+            },
+            {
+                "Name": "PhoneNumber",
+                "Value": 254700000000
+            }
+        ]
+    }
+}
+```
